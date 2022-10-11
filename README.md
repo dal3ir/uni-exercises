@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://avatars.githubusercontent.com/u/70957906?v=4" alt="Dalbir" width="200"></a>
+  <a href="https://dalbir.me"><img src="https://avatars.githubusercontent.com/u/70957906?v=4" alt="Dalbir" width="200"></a>
   <br>
   Dalbir
   <br>
@@ -8,7 +8,7 @@
 
 <h4 align="center">My project space.</h4>
 
-# <p align=center> ![](https://github.com/dalbir-1/uni-exercises/blob/master/assets/sitescreenshot.png) </p>
+# <p align=center> ![](https://github.com/dalbir-1/uni-exercises/blob/master/assets/screenshot.png) </p>
 # Site
 <table>
 <tr>
