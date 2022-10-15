@@ -1,477 +1,107 @@
-html {
-  box-sizing: border-box;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(-25%);
-  }
-  100% {
-    transform: translateX(25%);
-  }
-}
-
 body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  font-family: "Bahiana", cursive;
-  font-size: 3vw;
-  text-align: left;
-  background: radial-gradient(
-        circle,
-        #ffffff 2px,
-        rgba(0, 0, 0, 0) 3px,
-        rgba(0, 0, 0, 0)
-      )-50px 35px,
-    radial-gradient(circle, #ffffff 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))-30px
-      35px,
-    linear-gradient(-135deg, #000 12px, transparent 12px)-140px 44px,
-    linear-gradient(-225deg, #000 12px, transparent 12px) 60px 44px,
-    linear-gradient(-115deg, #ae8160 7px, transparent 7px)-60px 110px,
-    linear-gradient(-245deg, #ae8160 7px, transparent 7px) 141px 110px,
-    linear-gradient(180deg, #fff 20px, transparent 20px) 0px 0,
-    linear-gradient(180deg, #fff 20px, transparent 20px) 0px 140px,
-    linear-gradient(180deg, #fff 20px, transparent 20px) 0px 60px,
-    linear-gradient(180deg, #fff 20px, transparent 20px) 0px 79px,
-    linear-gradient(90deg, #000 1px, transparent 1px) 20px 0,
-    linear-gradient(90deg, #fff 20px, transparent 20px) 0px 0,
-    linear-gradient(-155deg, #000 15px, transparent 15px)-120px 12px,
-    linear-gradient(-205deg, #000 15px, transparent 15px) 40px 12px,
-    linear-gradient(90deg, #000 1px, transparent 1px) 60px 0,
-    linear-gradient(90deg, #000 1px, transparent 1px) 100px 0,
-    linear-gradient(90deg, #000 1px, transparent 1px) 140px 0,
-    linear-gradient(90deg, #fff 20px, transparent 20px) 60px 0,
-    linear-gradient(90deg, #fff 20px, transparent 20px) 80px 0,
-    linear-gradient(90deg, #fff 20px, transparent 20px) 140px 0,
-    linear-gradient(-20deg, transparent 197px, #000 197px) 109px 47px,
-    linear-gradient(-20deg, #000 8px, transparent 1px)-29px -104px,
-    linear-gradient(0deg, #000 1px, transparent 1px) 0px -100px,
-    linear-gradient(0deg, #000 1px, transparent 1px) 0px -20px,
-    linear-gradient(0deg, #000 1px, transparent 1px) 0px -60px,
-    linear-gradient(180deg, #000 1px, transparent 1px) 0px 20px,
-    linear-gradient(-115deg, #fff 3px, transparent 3px)-110px 49px,
-    linear-gradient(-250deg, #fff 3px, transparent 3px) 50px 49px,
-    linear-gradient(-115deg, #fff 3px, transparent 3px)-130px 49px,
-    linear-gradient(-250deg, #fff 3px, transparent 3px) 30px 49px,
-    radial-gradient(circle, #000000 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))-50px -40px,
-    radial-gradient(circle, #000000 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))-30px -40px,
-    radial-gradient(
-        circle,
-        #ffffff 1px,
-        #ffffff 2px,
-        rgba(0, 0, 0, 0) 3px,
-        rgba(0, 0, 0, 0)
-      )
-      30px -40px,
-    radial-gradient(
-        circle,
-        #ffffff 1px,
-        #ffffff 2px,
-        rgba(0, 0, 0, 0) 3px,
-        rgba(0, 0, 0, 0)
-      )
-      50px -40px,
-    radial-gradient(
-        circle,
-        #000000 4px,
-        #000000 5px,
-        rgba(0, 0, 0, 0) 6px,
-        rgba(0, 0, 0, 0)
-      )
-      30px -40px,
-    radial-gradient(
-        circle,
-        #000000 4px,
-        #000000 5px,
-        rgba(0, 0, 0, 0) 6px,
-        rgba(0, 0, 0, 0)
-      )
-      50px -40px,
-    linear-gradient(
-        45deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )
-      109px -106px,
-    linear-gradient(45deg, #a2bd77 30px, transparent 30px) 98px -101px,
-    linear-gradient(225deg, #a2bd77 30px, transparent 30px)-20px 20px,
-    linear-gradient(0deg, #000 1px, transparent 1px)-105px -111px,
-    linear-gradient(45deg, #f8dbd0 30px, transparent 30px) 18px -101px,
-    linear-gradient(225deg, #f8dbd0 30px, transparent 30px)-100px 20px,
-    radial-gradient(circle, #000000 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))
-      30px 37px,
-    radial-gradient(circle, #000000 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))
-      51px 37px,
-    radial-gradient(circle, #62300d 1px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0))
-      39px 41px,
-    radial-gradient(circle, #62300d 1px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0))
-      41px 41px,
-    radial-gradient(circle, #62300d 1px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0))
-      43px 41px,
-    linear-gradient(160deg, #fae2b4 11px, transparent 11px) 105px 111px,
-    linear-gradient(-20deg, #fae2b4 11px, transparent 11px)-24px -37px,
-    radial-gradient(
-        circle,
-        rgba(0, 0, 0, 0) 3px,
-        #62300d 3px,
-        rgba(0, 0, 0, 0) 5px
-      )
-      38px 43px,
-    radial-gradient(
-        circle,
-        rgba(0, 0, 0, 0) 3px,
-        #62300d 3px,
-        rgba(0, 0, 0, 0) 5px
-      )
-      44px 43px,
-    radial-gradient(
-        circle,
-        #fae2b4 10px,
-        rgba(0, 0, 0, 0) 11px,
-        rgba(0, 0, 0, 0)
-      )
-      41px 44px,
-    linear-gradient(
-        30deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )
-      98px -26px,
-    linear-gradient(
-        -30deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )-16px -26px,
-    linear-gradient(
-        60deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )
-      103px -17px,
-    linear-gradient(
-        -60deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )-22px -17px,
-    linear-gradient(45deg, #ae8160 30px, transparent 30px) 98px -21px,
-    linear-gradient(225deg, #ae8160 30px, transparent 30px)-20px 100px,
-    radial-gradient(
-        ellipse closest-side,
-        rgba(0, 0, 0, 0) 50px,
-        #000000 50px,
-        #000000 55px,
-        rgba(0, 0, 0, 0) 55px,
-        rgba(0, 0, 0, 0) 65px,
-        #000000 65px,
-        rgba(0, 0, 0, 0) 66px
-      ) -40px -13px,
-    radial-gradient(
-        ellipse closest-side,
-        rgba(0, 0, 0, 0) 50px,
-        #000000 50px,
-        #000000 55px,
-        rgba(0, 0, 0, 0) 55px,
-        rgba(0, 0, 0, 0) 61px,
-        #000000 61px,
-        rgba(0, 0, 0, 0) 62px
-      ) -40px 85px,
-    linear-gradient(0deg, #000 5px, transparent 5px) 0px -42px,
-    linear-gradient(45deg, #ccc 30px, transparent 30px) 18px -21px,
-    linear-gradient(225deg, #ccc 30px, transparent 30px)-100px 100px;
-  background-color: #f8dbd0;
-  background-size: 160px 160px;
-}
-
-body::before {
-  content: "";
-  width: 50%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto auto auto 0;
-  border-right: 2px solid #fff;
-  background: radial-gradient(
-        circle,
-        #ffffff 2px,
-        rgba(0, 0, 0, 0) 3px,
-        rgba(0, 0, 0, 0)
-      )-50px 35px,
-    radial-gradient(circle, #ffffff 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))-30px
-      35px,
-    linear-gradient(-135deg, #000 12px, transparent 12px)-140px 44px,
-    linear-gradient(-225deg, #000 12px, transparent 12px) 60px 44px,
-    linear-gradient(-115deg, #aaa 7px, transparent 7px)-60px 110px,
-    linear-gradient(-245deg, #aaa 7px, transparent 7px) 141px 110px,
-    linear-gradient(180deg, #eee 20px, transparent 20px) 0 0,
-    linear-gradient(180deg, #eee 20px, transparent 20px) 0 140px,
-    linear-gradient(180deg, #eee 20px, transparent 20px) 0 60px,
-    linear-gradient(180deg, #eee 20px, transparent 20px) 0 79px,
-    linear-gradient(90deg, #000 1px, transparent 1px) 20px 0,
-    linear-gradient(90deg, #eee 20px, transparent 20px) 0 0,
-    linear-gradient(-155deg, #000 15px, transparent 15px)-120px 12px,
-    linear-gradient(-205deg, #000 15px, transparent 15px) 40px 12px,
-    linear-gradient(90deg, #000 1px, transparent 1px) 60px 0,
-    linear-gradient(90deg, #000 1px, transparent 1px) 100px 0,
-    linear-gradient(90deg, #000 1px, transparent 1px) 140px 0,
-    linear-gradient(90deg, #eee 20px, transparent 20px) 60px 0,
-    linear-gradient(90deg, #eee 20px, transparent 20px) 80px 0,
-    linear-gradient(90deg, #eee 20px, transparent 20px) 140px 0,
-    linear-gradient(-20deg, transparent 197px, #000 197px) 109px 47px,
-    linear-gradient(-20deg, #000 8px, transparent 1px)-29px -104px,
-    linear-gradient(0deg, #000 1px, transparent 1px) 0 -100px,
-    linear-gradient(0deg, #000 1px, transparent 1px) 0 -20px,
-    linear-gradient(0deg, #000 1px, transparent 1px) 0 -60px,
-    linear-gradient(180deg, #000 1px, transparent 1px) 0 20px,
-    linear-gradient(-115deg, #fff 3px, transparent 3px)-110px 49px,
-    linear-gradient(-250deg, #fff 3px, transparent 3px) 50px 49px,
-    linear-gradient(-115deg, #fff 3px, transparent 3px)-130px 49px,
-    linear-gradient(-250deg, #fff 3px, transparent 3px) 30px 49px,
-    radial-gradient(circle, #000000 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))-50px -40px,
-    radial-gradient(circle, #000000 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))-30px -40px,
-    radial-gradient(
-        circle,
-        #ffffff 1px,
-        #ffffff 2px,
-        rgba(0, 0, 0, 0) 3px,
-        rgba(0, 0, 0, 0)
-      )
-      30px -40px,
-    radial-gradient(
-        circle,
-        #ffffff 1px,
-        #ffffff 2px,
-        rgba(0, 0, 0, 0) 3px,
-        rgba(0, 0, 0, 0)
-      )
-      50px -40px,
-    radial-gradient(
-        circle,
-        #000000 4px,
-        #000000 5px,
-        rgba(0, 0, 0, 0) 6px,
-        rgba(0, 0, 0, 0)
-      )
-      30px -40px,
-    radial-gradient(
-        circle,
-        #000000 4px,
-        #000000 5px,
-        rgba(0, 0, 0, 0) 6px,
-        rgba(0, 0, 0, 0)
-      )
-      50px -40px,
-    linear-gradient(
-        45deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )
-      109px -106px,
-    linear-gradient(45deg, #ccc 30px, transparent 30px) 98px -101px,
-    linear-gradient(225deg, #ccc 30px, transparent 30px)-20px 20px,
-    linear-gradient(0deg, #000 1px, transparent 1px)-105px -111px,
-    linear-gradient(45deg, #dadada 30px, transparent 30px) 18px -101px,
-    linear-gradient(225deg, #dadada 30px, transparent 30px)-100px 20px,
-    radial-gradient(circle, #000000 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))
-      30px 37px,
-    radial-gradient(circle, #000000 2px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0))
-      51px 37px,
-    radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0))
-      39px 41px,
-    radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0))
-      41px 41px,
-    radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0))
-      43px 41px,
-    linear-gradient(160deg, #eee 11px, transparent 11px) 105px 111px,
-    linear-gradient(-20deg, #eee 11px, transparent 11px)-24px -37px,
-    radial-gradient(
-        circle,
-        rgba(0, 0, 0, 0) 3px,
-        #62300d 3px,
-        rgba(0, 0, 0, 0) 5px
-      )
-      38px 43px,
-    radial-gradient(
-        circle,
-        rgba(0, 0, 0, 0) 3px,
-        #62300d 3px,
-        rgba(0, 0, 0, 0) 5px
-      )
-      44px 43px,
-    radial-gradient(
-        circle,
-        #eeeeee 10px,
-        rgba(0, 0, 0, 0) 11px,
-        rgba(0, 0, 0, 0)
-      )
-      41px 44px,
-    linear-gradient(
-        30deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )
-      98px -26px,
-    linear-gradient(
-        -30deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )-16px -26px,
-    linear-gradient(
-        60deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )
-      103px -17px,
-    linear-gradient(
-        -60deg,
-        transparent 0,
-        transparent 30px,
-        #000 31px,
-        transparent 31.5px
-      )-22px -17px,
-    linear-gradient(45deg, #aaa 30px, transparent 30px) 98px -21px,
-    linear-gradient(225deg, #aaa 30px, transparent 30px)-20px 100px,
-    radial-gradient(
-        ellipse closest-side,
-        rgba(0, 0, 0, 0) 50px,
-        #000000 50px,
-        #000000 55px,
-        rgba(0, 0, 0, 0) 55px,
-        rgba(0, 0, 0, 0) 65px,
-        #000000 65px,
-        rgba(0, 0, 0, 0) 66px
-      ) -40px -13px,
-    radial-gradient(
-        ellipse closest-side,
-        rgba(0, 0, 0, 0) 50px,
-        #000000 50px,
-        #000000 55px,
-        rgba(0, 0, 0, 0) 55px,
-        rgba(0, 0, 0, 0) 61px,
-        #000000 61px,
-        rgba(0, 0, 0, 0) 62px
-      ) -40px 85px,
-    linear-gradient(0deg, #000 5px, transparent 5px) 0 -42px,
-    linear-gradient(45deg, #ccc 30px, transparent 30px) 18px -21px,
-    linear-gradient(225deg, #ccc 30px, transparent 30px)-100px 100px;
-  background-color: #f8dbd0;
-  background-size: 160px 160px;
-}
-
-.button-86 {
-  all: unset;
-  width: 140px;
-  height: 40px;
-  font-size: 18px;
-  background: transparent;
-  border: none;
-  position: relative;
-  color: #f0f0f0;
-  cursor: pointer;
-  z-index: 1;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-86::after,
-.button-86::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -99999;
-  transition: all 0.4s;
-}
-
-.button-86::before {
-  transform: translate(0%, 0%);
-  width: 100%;
-  height: 100%;
-  background: #28282d;
-  border-radius: 10px;
-}
-
-.button-86::after {
-  transform: translate(10px, 10px);
-  width: 35px;
-  height: 35px;
-  background: #ffffff15;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
-}
-
-.button-86:hover::before {
-  transform: translate(5%, 20%);
-  width: 110%;
-  height: 110%;
-}
-
-.button-86:hover::after {
-  border-radius: 10px;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
-}
-
-.button-86:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
+  background-color: #100e17;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1.2fr 1.2fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". grid1 ."
-    ". grid2 ."
-    ". grid3 .";
-
-  grid-gap: 0.7rem;
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
 }
 
-.grid1 {
-  grid-area: grid1;
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
 }
 
-.grid2 {
-  grid-area: grid2;
+.card:not(:first-child) {
+  margin-left: -50px;
 }
 
-.grid3 {
-  grid-area: grid3;
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 65%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
 }
