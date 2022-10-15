@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>des.js</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="image" />
+
+    <script>
+      let images = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"];
+
+      function randImg() {
+        let size = images.length;
+        let x = Math.floor(size * Math.random());
+        document.getElementById("image").src = images[x];
+      }
+      randImg();
+    </script>
+  </body>
+</html>

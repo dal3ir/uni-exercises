@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date.js</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        color: rgb(8, 9, 10);
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="current_date"></h1>
+
+    <script>
+      date = new Date();
+      day = date.getDate();
+      month = date.getMonth() + 1;
+      year = date.getFullYear();
+      document.getElementById("current_date").innerHTML =
+        day + "/" + month + "/" + year;
+    </script>
+  </body>
+</html>
