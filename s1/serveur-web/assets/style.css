@@ -71,15 +71,15 @@ body {
   background: rgb(0, 154, 217);
   background: linear-gradient(
     90deg,
-    rgba(0, 154, 217, 1) 0%,
-    rgba(217, 147, 0, 1) 65%,
-    rgba(255, 186, 0, 1) 100%
+    rgb(246, 250, 252) 0%,
+    rgb(187, 180, 167) 65%,
+    rgb(58, 58, 58) 100%
   );
-  transition: 0.6s ease-out;
+  transition: 2s ease-out;
 }
 
 .card:hover .filledbar {
-  width: 120px;
+  width: 100%;
   transition: 0.4s ease-out;
 }
 
