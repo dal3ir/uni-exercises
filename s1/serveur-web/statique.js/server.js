@@ -35,6 +35,8 @@ traiter_requete = function (req, res) {
     type = "image/png";
   } else if (extension === ".mp3") {
     type = "audio/mp3";
+  } else if (extension === ".js") {
+    type = "text/js";
   }
 
   try {
