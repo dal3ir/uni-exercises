@@ -8,18 +8,20 @@
 
 <h4 align="center">My project space.</h4>
 
-# <p align=center> ![](https://github.com/dalbir-1/uni-exercises/blob/master/assets/screenshot.png) </p>
+# <p align=center> ![](https://github.com/dal3ir/uni-exercises/blob/master/assets/screenshot.png) </p>
+
 # Site
+
 <table>
 <tr>
 <td>
   A website with all my university projects!
   
   
-  Here is a working live demo :  https://dalbir-1.github.io/uni-exercises/
+  Here is a working live demo :  https://dal3ir.github.io/uni-exercises/
 </td>
 </tr>
 </table>
 
-> GitHub [@dalbir-1](https://github.com/dalbir-1) &nbsp;&middot;&nbsp;
-> Twitter [@dalbir_1](https://twitter.com/dalbir_1)
+> GitHub [@dal3ir](https://github.com/dal3ir) &nbsp;&middot;&nbsp;
+> Twitter [@dal3ir](https://twitter.com/dal3ir)
