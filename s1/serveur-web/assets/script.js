@@ -1,10 +1,7 @@
 let card1 = document.getElementsByClassName("card1");
 
 let myFunction1 = function () {
-  let attribute = window.open(
-    "https://dalbir-1.github.io/uni-exercises/s1/serveur-web/date.js/",
-    "_blank"
-  );
+  let attribute = window.open("date.js/", "_blank");
 };
 
 for (let i = 0; i < card1.length; i++) {
@@ -14,10 +11,7 @@ for (let i = 0; i < card1.length; i++) {
 let card2 = document.getElementsByClassName("card2");
 
 let myFunction2 = function () {
-  let attribute = window.open(
-    "https://dalbir-1.github.io/uni-exercises/s1/serveur-web/des.js/",
-    "_blank"
-  );
+  let attribute = window.open("des.js/", "_blank");
 };
 
 for (let i = 0; i < card2.length; i++) {
@@ -27,10 +21,7 @@ for (let i = 0; i < card2.length; i++) {
 let card3 = document.getElementsByClassName("card3");
 
 let myFunction3 = function () {
-  let attribute = window.open(
-    "https://dalbir-1.github.io/uni-exercises/s1/serveur-web/statique.js",
-    "_blank"
-  );
+  let attribute = window.open("statique.js", "_blank");
 };
 
 for (let i = 0; i < card3.length; i++) {
