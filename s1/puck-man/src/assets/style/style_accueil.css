@@ -1,0 +1,97 @@
+/*
+.logo {
+  width: 450px;
+  height: 300px;
+}
+body {
+  background: rgb(241, 233, 233);
+  text-align: center;
+}
+
+div {
+  text-align: right;
+  border: 3px black solid;
+  padding: 10px;
+}
+
+.creecompte {
+  display: flex;
+  align-items: center;
+}
+*/
+@font-face {
+  font-family: "Pacman";
+  src: url("CrackMan.TTF");
+}
+body {
+  font-family: "Pacman";
+  margin: 0vh;
+  background: rgb(241, 233, 233);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 600px;
+  height: auto;
+  grid-area: logo;
+}
+
+
+.container {
+  font-family: "Pacman";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr fr;
+  gap: 0px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: ". logo .";
+  border: 3px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 20px;
+  width: 700px;
+  height: 350px;
+  background: rgb(133, 189, 198);
+}
+
+.boutoncreat {
+  font-family: "Pacman";
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  height: 100px;
+  margin-top: 100px;
+  margin-right: 70px;
+  margin-left: 100px;
+  background: rgb(241, 233, 233);
+}
+
+.connect {
+  width: 372px;
+  height: 390px;
+  border: 3px black solid;
+  box-sizing: border-box;
+  margin-top: -20px;
+  margin-left: -12px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.buttonconnect {
+  font-family: "Pacman";
+  padding: 10px;
+  font-size: 16px;
+  background: rgb(241, 233, 233);
+}
+
+.tab {
+  margin-left: -20px;
+  width: 370px;
+  height: 390px;
+  border: 3px black solid;
+  box-sizing: border-box;
+  margin-top: -20px;
+  text-align: center;
+}

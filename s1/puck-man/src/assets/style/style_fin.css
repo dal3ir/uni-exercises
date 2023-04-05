@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Pacman"; /*a name to be used later*/
+  src: url("CrackMan.TTF");
+}
+body {
+  font-family: Pacman;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(240, 113, 22);
+}
+.logo {
+  width: 600px;
+  height: auto;
+}

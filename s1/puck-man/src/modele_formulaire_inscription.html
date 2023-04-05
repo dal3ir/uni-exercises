@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulaire inscription</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/style/style_inscription.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><img src="assets/media/logo.png" id="logo" alt="" /></div>
+      <div class="formulaire"></div>
+
+     
+
+      <div class="box-formulaire" id="shadow-box">
+        {{ erreur | safe }}
+        <form action="/req_inscrire" method="GET">
+          <p id="inscription">Inscription</p>
+            <p>
+              <label>Pseudo :</label>
+          <input type="text" name="pseudo" value=""  pattern="[a-zA-Z0-9]+" required/>
+          </p><p>
+          <label>Mot de passe :</label>
+          <input type="text" name="password" value="" pattern="[a-zA-Z0-9]+" required/>
+          </p><p>
+          <a href="/req_afficher_formulaire_inscription"><button class="button-9" role="button">Créer compte</button>
+          </a>
+        </p>
+        </form>
+      </div>
+  </body>
+</html>

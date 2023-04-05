@@ -1,9 +1,9 @@
 function addMore() {
-  let name = document.getElementById("name").value;
+  let name = document.querySelector("#name").value;
   if (name == "") {
-    document.getElementById("error").innerHTML = "Entrez une valeur";
+    document.querySelector("#error").innerHTML = "Entrez une valeur";
   } else {
-    let box = document.getElementById("box");
+    let box = document.querySelector("#box");
     let li = document.createElement("li");
     li.textContent = name;
     li.className = "remove";
@@ -23,12 +23,12 @@ function addMore() {
       box.appendChild(li, pos);
     }
   }
-  document.getElementById("name").value = "";
-}
+  document.querySelector("#name").value = "";
+  
 
 let btn = document.querySelector("ul");
 btn.addEventListener("click", function (e) {
-  let box = document.getElementById("box");
+  let box = document.querySelector("#box");
   let li = e.target.parentNode;
   box.removeChild(li);
 });

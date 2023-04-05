@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Pacman";
+  src: url("CrackMan.TTF");
+}
+body {
+  font-family: "Pacman";
+  margin: 0vh;
+
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 600px;
+  height: auto;
+  grid-area: logo;
+}
+
+.score {
+  color: #ffffff;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+}
+.grille-ligne {
+  /* position: static;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* flex-wrap: wrap; */
+  /* box-sizing: border-box;*/
+  margin-bottom: -4px;
+}
+@media only screen and (max-width: 800px) {
+  img {
+    height: 18px;
+    width: 18px;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="10" />
+    <title>Pacman - Resultat</title>
+    <link rel="stylesheet" href="assets/style/style_resultat.css" />
+  </head>
+  <body>
+    <img class="logo" src="assets/media/logo.png" alt="" />
+    <p>
+    {{resultat | safe}}
+    </p>
+        <div class = dif>
+    <div>
+        <p class= classique>Classique </p>
+        {{classique| safe }}
+      </div>
+        <div>
+          <p class= feu>  Feu </p> 
+        {{feu| safe }}
+          
+        </div>
+        
+      <div>
+         <p class= froid> Froid </p>
+         {{froid| safe }}
+      </div>
+          </div>
+
+        <p> {{recommencer | safe}}</p>
+          {{quitter |
+    safe}}
+  </body>
+</html>

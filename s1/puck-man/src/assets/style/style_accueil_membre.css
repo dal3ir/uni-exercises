@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Pacman"; /*a name to be used later*/
+  src: url("CrackMan.TTF");
+}
+body {
+  font-family: Pacman;
+  margin: 0;
+  text-align: center;
+  background-color: yellow;
+  align-items: center;
+}
+.regle {
+  border: 3px black solid;
+  border-radius: 20px;
+  margin: auto;
+  width: 500px;
+  padding: 15px;
+}
+
+.logo {
+  height: auto;
+  width: 600px;
+}
+
+.dif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.classique {
+  width: 5vw;
+  height: 7vh;
+}
+.feu {
+  width: 5vw;
+  height: 7vh;
+}
+
+.froid {
+  width: 5vw;
+  height: 7vh;
+}

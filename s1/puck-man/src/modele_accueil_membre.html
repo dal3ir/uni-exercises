@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Accueil membre</title>
+		<meta charset="utf-8">
+		<link rel = "stylesheet" type= text/css href = "assets/style/style_accueil_membre.css">
+	</head>
+	<img class="logo"  src="assets/media/logo.png">
+	<body>
+		 <h1>Bienvenue !</h1>
+
+			<div class= regle>
+			Bonjour <em>{{ pseudo }}</em>, voici les regles du jeu !
+
+		<p> 1.Eviter les fantomes. </p>
+		<p> 2.Manger toutes les pastilles. </p>
+			</div>
+		
+		<p> Choisissez votre theme pour commencer le jeu.</p>
+		<div class = dif>
+			<div>
+				<p class= classique>Classique </p>
+					<a href="/req_debuter?action=classique"><img src= "assets/media/theme_classique.png" class = classique></a>
+			</div>
+			 	<div>
+					<p class= feu>	Feu </p> 
+					<a href="/req_debuter?action=feu"><img src= "assets/media/theme_feu.png" class = feu></a>
+					
+				</div>
+			<div>
+				 <p class= froid> Froid </p>
+				 <a href="/req_debuter?action=froid"><img src= "assets/media/theme_froid.png" class = froid></a>
+			</div>
+			
+		</div>
+
+</html>

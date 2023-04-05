@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="assets/style/style_accueil.css" />
+  <head>
+    <title>Accueil</title>
+    <meta charset="utf-8" />
+  </head>
+  <img src="assets/media/logo.png" class="logo" alt="" />
+  <body>
+    <div class="container">
+      <a class="tab" href="/req_afficher_formulaire_inscription" class="creat">
+        <button class="boutoncreat">Creer compte</button>
+      </a>
+
+      <form class="connect" action="/req_identifier" method="GET">
+        <h3>Deja membre ?</h3>
+        <p> 
+            {{ erreur }}
+           </p>
+        pseudo :
+        <input class="pseudo" type="text" name="pseudo" value="" />
+        <br />
+        <p>
+          pass :
+          <input class="pass" type="password" name="password" value="" />
+        </p>
+        <br />
+        <p>
+          <input
+            class="buttonconnect"
+            type="submit"
+            name="action"
+            value="Se connecter"
+          />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
